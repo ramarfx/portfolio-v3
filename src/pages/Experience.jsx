@@ -1,33 +1,30 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { competitions, schools } from "../docs/experiences";
 
 const Experience = () => {
+  const [showSchool, setShowSchool] = useState(true);
   const pendidikanRef = useRef();
   const lombaRef = useRef();
+
+  const handleClick = () => {
+    setShowSchool(!showSchool);
+
+    lombaRef.current.classList.remove("btn-active");
+    pendidikanRef.current.classList.add("btn-active");
+  };
 
   const pendidikanContent = document.querySelectorAll(".pendidikan");
   const lombaContent = document.querySelectorAll(".lomba");
 
   const handlePendidikan = () => {
-    pendidikanContent.forEach((pendidikan) => {
-      pendidikan.classList.add("show");
-    });
-    lombaContent.forEach((lomba) => {
-      lomba.classList.remove("show");
-    });
+    setShowSchool(true);
 
     lombaRef.current.classList.remove("btn-active");
     pendidikanRef.current.classList.add("btn-active");
   };
 
   const handleLomba = () => {
-    pendidikanContent.forEach((pendidikan) => {
-      pendidikan.classList.remove("show");
-    });
-    lombaContent.forEach((lomba) => {
-      lomba.classList.add("show");
-      // lomba.className.display = 'hidden'
-    });
+    setShowSchool(false);
 
     lombaRef.current.classList.add("btn-active");
     pendidikanRef.current.classList.remove("btn-active");
@@ -56,23 +53,23 @@ const Experience = () => {
             </button>
           </div>
           <div className="timeline w-full px-4 lg:w-2/3">
-            {competitions.map((competition, i) => (
-              <div className="wrap right lomba hidden" key={i}>
-                <div className="content">
-                  <h2 className="text-primary">{competition.year}</h2>
-                  <p>{competition.description}</p>
-                </div>
-              </div>
-            ))}
-
-            {schools.map((school, i) => (
-              <div className="wrap right pendidikan show" key={i}>
-                <div className="content">
-                  <h2 className="text-primary">{school.year}</h2>
-                  <p>{school.description}</p>
-                </div>
-              </div>
-            ))}
+            {showSchool
+              ? schools.map((school) => (
+                  <div className="wrap right pendidikan show" key={school.id}>
+                    <div className="content">
+                      <h2 className="text-primary">{school.year}</h2>
+                      <p>{school.description}</p>
+                    </div>
+                  </div>
+                ))
+              : competitions.map((competition) => (
+                  <div className="wrap right lomba show" key={competition.id}>
+                    <div className="content">
+                      <h2 className="text-primary">{competition.year}</h2>
+                      <p>{competition.description}</p>
+                    </div>
+                  </div>
+                ))}
           </div>
         </div>
       </div>

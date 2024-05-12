@@ -120,7 +120,7 @@
 
 /* The actual content */
 .content {
-  @apply bg-lightDark-100 backdrop-blur bg-opacity-25 py-5 px-7 relative rounded-md text-secondary hover:bg-lightDark-200;
+  @apply bg-lightDark-100 transition backdrop-blur bg-opacity-25 py-5 px-7 relative rounded-md text-secondary hover:bg-lightDark-200;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
