@@ -35,7 +35,8 @@ export const Navbar = () => {
                 onClick={handleToggle}
                 id="hamburger"
                 name="hamburger"
-                className="absolute right-4 block lg:hidden">
+                className="absolute right-4 block lg:hidden"
+                aria-label="hamburger menu button">
                 <span className="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
                 <span className="hamburger-line transition duration-300 ease-in-out"></span>
                 <span className="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
