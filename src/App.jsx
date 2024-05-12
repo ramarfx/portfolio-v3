@@ -16,21 +16,14 @@ export default function App() {
 
   // Init ParticleAnimation
   useEffect(() => {
-    let options;
-    if (window.innerWidth < 768) {
-      options = {
-        quantity: 10,
-        staticity: 50,
-        ease: 50,
-      };
-    } else {
-      options = {
+    if (window.innerWidth > 768) {
+      const options = {
         quantity: 80,
         staticity: 50,
         ease: 50,
       };
+      new ParticleAnimation(canvasRef.current, options);
     }
-    new ParticleAnimation(canvasRef.current, options);
   }, []);
   return (
     <div className="bg-slate-900 relative m-0 overflow-hidden">
