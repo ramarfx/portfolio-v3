@@ -21,7 +21,7 @@ export const projects = [
         title: 'E-Mading',
         image: '/project/emading.png',
         sourceCode: 'https://github.com/ramarfx/e-mading',
-        preview: null
+        preview: '#'
     },
     {
         title: 'Rebellum',
@@ -32,7 +32,7 @@ export const projects = [
     {
         title: 'Inditech',
         image: '/project/inditech.png',
-        sourceCode: null,
+        sourceCode: '#',
         preview: "https://indi.tech"
     },
 ]

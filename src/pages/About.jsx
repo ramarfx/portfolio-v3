@@ -19,10 +19,11 @@ const About = () => {
                 <img
                   src="/profil.png"
                   className="h-auto w-[350px] max-w-full relative z-10 peer"
+                  alt="ramadina almuzthazam image"
                 />
                 {/* backlight */}
                 <div className="pointer-events-none transition duration-300 absolute -left-52 -bottom-10 -rotate-45 opacity-50 blur-3xl hover:opacity-100 peer-hover:opacity-80">
-                  <img src="/blob.svg" className="scale-125" />
+                  <img src="/blob.svg" className="scale-125" alt="backlight" />
                 </div>
 
               </div>

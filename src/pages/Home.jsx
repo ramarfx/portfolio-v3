@@ -40,6 +40,7 @@ const Home = () => {
               <img
                 src={profile}
                 className="mx-auto h-auto w-[350px] max-w-full lg:scale-110"
+                alt="ramadina almuzthazam image"
               />
               <span className="absolute -bottom-24 left-1/2 -z-10 -translate-x-1/2 md:scale-125 lg:-bottom-20 lg:scale-150">
                 <img src="/profile-blob.svg" alt="" />
