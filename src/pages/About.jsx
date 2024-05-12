@@ -14,11 +14,17 @@ const About = () => {
           </div>
           <div className="flex flex-wrap items-center">
             <div className="mt-10 w-full px-4 lg:w-1/2">
-              <div className="mask mx-auto">
+              <div className="mask mx-auto relative">
+            
                 <img
                   src="/profil.png"
-                  className="h-auto w-[350px] max-w-full"
+                  className="h-auto w-[350px] max-w-full relative z-10"
                 />
+                {/* backlight */}
+                <div className="pointer-events-none absolute -left-52 -bottom-10 -rotate-45 opacity-70 blur-3xl">
+                  <img src="/blob.svg" className="scale-125" />
+                </div>
+
               </div>
             </div>
             <div className="mt-10 w-full self-center px-4 lg:w-1/2">

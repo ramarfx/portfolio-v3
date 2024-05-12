@@ -6,10 +6,12 @@ import Illustration from "./components/Illustrations";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
+import Project from "./pages/Project";
+import Footer from "./pages/Footer";
 
 export default function App() {
   return (
-    <div className="bg-slate-900">
+    <div className="bg-slate-900 relative m-0 overflow-hidden">
       <Illustration />
 
       {/* header */}
@@ -20,6 +22,8 @@ export default function App() {
       <About />
       <Skills />
       <Experience />
+      <Project />
+      <Footer />
     </div>
   );
 }
