@@ -18,10 +18,10 @@ const About = () => {
             
                 <img
                   src="/profil.png"
-                  className="h-auto w-[350px] max-w-full relative z-10"
+                  className="h-auto w-[350px] max-w-full relative z-10 peer"
                 />
                 {/* backlight */}
-                <div className="pointer-events-none absolute -left-52 -bottom-10 -rotate-45 opacity-70 blur-3xl">
+                <div className="pointer-events-none transition duration-300 absolute -left-52 -bottom-10 -rotate-45 opacity-50 blur-3xl hover:opacity-100 peer-hover:opacity-80">
                   <img src="/blob.svg" className="scale-125" />
                 </div>
 

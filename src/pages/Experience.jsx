@@ -56,8 +56,8 @@ const Experience = () => {
             </button>
           </div>
           <div className="timeline w-full px-4 lg:w-2/3">
-            {competitions.map((competition) => (
-              <div className="wrap right lomba hidden">
+            {competitions.map((competition, i) => (
+              <div className="wrap right lomba hidden" key={i}>
                 <div className="content">
                   <h2 className="text-primary">{competition.year}</h2>
                   <p>{competition.description}</p>
@@ -65,8 +65,8 @@ const Experience = () => {
               </div>
             ))}
 
-            {schools.map((school) => (
-              <div className="wrap right pendidikan show">
+            {schools.map((school, i) => (
+              <div className="wrap right pendidikan show" key={i}>
                 <div className="content">
                   <h2 className="text-primary">{school.year}</h2>
                   <p>{school.description}</p>

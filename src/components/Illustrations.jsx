@@ -16,7 +16,7 @@ const Illustration = () => {
       <div className="pointer-events-none absolute left-[10%] top-[45%] -rotate-45 opacity-30 blur-3xl">
         <img src="/shape.svg" className="-scale-x-100" />
       </div>
-      <div className="pointer-events-none absolute left-0 bottom-0 rotate-180 opacity-20 blur-3xl">
+      <div className="pointer-events-none absolute -left-[20%] bottom-[10%] rotate-180 opacity-20 blur-3xl">
         <img src="/shape.svg" className="-scale-150" />
       </div>
       <div className="pointer-events-none absolute -right-1/2 top-40 rotate-180 opacity-70 blur-3xl">
