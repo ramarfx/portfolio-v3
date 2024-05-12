@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Illustration from "./components/Illustrations";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
 
 export default function App() {
   return (
@@ -16,8 +17,9 @@ export default function App() {
 
       {/* sections */}
       <Home />
-      <About/>
-      <Skills/>
+      <About />
+      <Skills />
+      <Experience />
     </div>
   );
 }
