@@ -56,7 +56,7 @@ export const Navbar = () => {
                     <a
                       href="#about"
                       className="mx-5 flex py-2 font-poppins text-base text-slate-300 group-hover:text-primary">
-                      about
+                      About
                     </a>
                   </li>
                   <li className="group">
@@ -77,7 +77,7 @@ export const Navbar = () => {
                     <a
                       href="#project"
                       className="mx-5 flex py-2 font-poppins text-base text-slate-300 group-hover:text-primary">
-                      project
+                      Project
                     </a>
                   </li>
                 </ul>
