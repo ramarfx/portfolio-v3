@@ -47,4 +47,9 @@ export const competitions = [
         year: "2024",
         description: "Juara 2 LKS Jakarta Timur 2024",
     },
+    {
+        id: 5,
+        year: "2024",
+        description: "Juara 2 LKS DKI Jakarta 2024",
+    },
 ]
