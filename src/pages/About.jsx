@@ -15,7 +15,7 @@ const About = () => {
           <div className="flex flex-wrap items-center">
             <div className="mt-10 w-full px-4 lg:w-1/2">
               <div className="mask mx-auto relative">
-            
+
                 <img
                   src="/profil.png"
                   className="h-auto w-[350px] max-w-full relative z-10 peer"
@@ -23,7 +23,7 @@ const About = () => {
                 />
                 {/* backlight */}
                 <div className="pointer-events-none transition duration-300 absolute -left-52 -bottom-10 -rotate-45 opacity-50 blur-3xl hover:opacity-100 peer-hover:opacity-80">
-                  <img src="/blob.svg" className="scale-125" alt="backlight" />
+                  <img src="/blob.svg" className="scale-125" alt="backlight" draggable="false" />
                 </div>
 
               </div>

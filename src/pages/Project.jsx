@@ -8,11 +8,11 @@ const Project = () => {
         <div className="flex flex-wrap">
           <div className="flex w-full flex-col items-center px-4 py-4 text-center">
             <h1 className="hover-underline-animation py-3 text-3xl font-bold uppercase text-primary md:text-5xl">
-              Project
+              Proyek
             </h1>
             <p className="text-base text-secondary lg:w-1/2">
-              Berikut adalah project-project yang sudah saya buat sebelumnya.
-              Mulai dari project sekolah maupun project individu
+              Berikut adalah beberapa proyek yang sudah saya buat sebelumnya.
+              Mulai dari project sekolah maupun project individu.
             </p>
           </div>
 

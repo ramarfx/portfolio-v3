@@ -1,28 +1,8 @@
 export const schools = [
     {
         id: 1,
-        year: "2013 - 2019",
-        description: "SDN 006 AirMolek 1, Riau",
-    },
-    {
-        id: 2,
-        year: "2019",
-        description: "Pesantren Darul Huda Lirik, Riau",
-    },
-    {
-        id: 3,
-        year: "2019 - 2022",
-        description: "SMPN 144 Cakung, DKI Jakarta",
-    },
-    {
-        id: 4,
-        year: "2022 - 2025",
-        description: "SMKN 46 Cipinang, DKI Jakarta",
-    },
-    {
-        id: 5,
-        year: "2025 - soon",
-        description: "Institut Teknologi Bandung (ITB), Jawa Barat",
+        year: "September 2024 - November 2024",
+        description: "INDI Technology | Web Developer",
     },
 ]
 

@@ -6,16 +6,6 @@ const Experience = () => {
   const pendidikanRef = useRef();
   const lombaRef = useRef();
 
-  const handleClick = () => {
-    setShowSchool(!showSchool);
-
-    lombaRef.current.classList.remove("btn-active");
-    pendidikanRef.current.classList.add("btn-active");
-  };
-
-  const pendidikanContent = document.querySelectorAll(".pendidikan");
-  const lombaContent = document.querySelectorAll(".lomba");
-
   const handlePendidikan = () => {
     setShowSchool(true);
 
@@ -43,33 +33,37 @@ const Experience = () => {
               ref={pendidikanRef}
               onClick={handlePendidikan}
               className="btn-active mx-2 px-2 text-center font-poppins text-base font-bold text-primary lg:my-2 lg:text-lg">
-              Pendidikan
+              Pengalaman
             </button>
             <button
               ref={lombaRef}
               onClick={handleLomba}
               className="mx-2 px-3 py-1 text-center font-poppins text-base font-bold text-primary lg:my-2 lg:text-lg">
-              lomba
+              Kompetisi
             </button>
           </div>
           <div className="timeline w-full px-4 lg:w-2/3">
             {showSchool
-              ? schools.map((school) => (
+              ? schools.map((school) => {
+                const perusahaan = school.description.split("|");
+                return (
                   <div className="wrap right pendidikan show" key={school.id}>
                     <div className="content">
                       <h2 className="text-primary">{school.year}</h2>
-                      <p>{school.description}</p>
+                      <p className="text-lg">{perusahaan[0]}</p>
+                      <p className="text-sm">{perusahaan[1]}</p>
                     </div>
                   </div>
-                ))
+                )
+              })
               : competitions.map((competition) => (
-                  <div className="wrap right lomba show" key={competition.id}>
-                    <div className="content">
-                      <h2 className="text-primary">{competition.year}</h2>
-                      <p>{competition.description}</p>
-                    </div>
+                <div className="wrap right lomba show" key={competition.id}>
+                  <div className="content">
+                    <h2 className="text-primary">{competition.year}</h2>
+                    <p className="text-lg">{competition.description}</p>
                   </div>
-                ))}
+                </div>
+              ))}
           </div>
         </div>
       </div>
