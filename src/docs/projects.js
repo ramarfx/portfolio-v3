@@ -12,10 +12,10 @@ export const projects = [
         preview: 'http://azunime.infinityfreeapp.com'
     },
     {
-        title: 'Artem',
-        image: '/project/artem.webp',
-        sourceCode: 'https://github.com/ramarfx/artem',
-        preview: 'https://ramarfx.github.io/artem'
+        title: 'Healthyself',
+        image: '/project/healthyself.jpeg',
+        sourceCode: '#',
+        preview: 'https://healthyself.vercel.app'
     },
     {
         title: 'E-Mading',

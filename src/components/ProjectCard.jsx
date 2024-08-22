@@ -22,7 +22,7 @@ const ProjectCard = ({ title, source, preview, children }) => {
 };
 
 ProjectCard.Image = ({ image }) => {
-  return <img src={image} alt={image} className="w-full max-w-full" />;
+  return <img src={image} alt={image} className="w-full max-w-full h-[200px] object-cover object-left-top" />;
 };
 
 export default ProjectCard;

@@ -5,7 +5,7 @@ const Home = () => {
   const typedRef = useRef();
   useEffect(() => {
     const type = new Typed(typedRef.current, {
-      strings: ["web developer", "android developer"],
+      strings: ["web developer", "frontend developer"],
       typeSpeed: 120,
       backSpeed: 40,
       loop: true,

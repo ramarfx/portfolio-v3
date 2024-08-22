@@ -4,6 +4,11 @@ export const schools = [
         year: "September 2024 - November 2024",
         description: "INDI Technology | Web Developer",
     },
+    {
+        id: 2,
+        year: "Agustus 2024 - Now",
+        description: "GRAVIX | Web Developer",
+    },
 ]
 
 export const competitions = [
@@ -31,5 +36,10 @@ export const competitions = [
         id: 5,
         year: "2024",
         description: "Juara 2 LKS DKI Jakarta 2024",
+    },
+    {
+        id: 6,
+        year: "2024",
+        description: "Juara 2 T8chnofest 2024",
     },
 ]
