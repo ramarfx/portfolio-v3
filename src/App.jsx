@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import Home from "./pages/Home";
@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div className="bg-slate-900 relative m-0 overflow-hidden">
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-        <canvas ref={canvasRef}></canvas>
+        <canvas ref={canvasRef} className="w-full h-full"></canvas>
       </div>
       <Illustration />
 

@@ -37,19 +37,7 @@ const About = () => {
                 adalah tantangan yang harus saya terima serta saya hadapi
               </p>
 
-              <div className="flex flex-wrap justify-around gap-2 md:justify-normal md:gap-10">
-                <div className="flex flex-col gap-1 font-poppins font-bold text-primary">
-                  <p className="text-sm md:text-base">Nama</p>
-                  <p className="text-sm md:text-base">Umur</p>
-                  <p className="text-sm md:text-base">Asal</p>
-                </div>
-
-                <div className="flex flex-col items-start gap-1 font-poppins font-medium text-secondary">
-                  <p className="text-sm md:text-base">Ramadina Al Muzthazam</p>
-                  <p className="text-sm md:text-base">16 Tahun</p>
-                  <p className="text-sm md:text-base">Air Molek, Riau</p>
-                </div>
-              </div>
+              <a href="https://drive.google.com/file/d/1bh5Wf1mI2WvRlj97eXCyZl2A6e8DAlvm/view?usp=sharing" download={true} className="bg-lightDark-100 rounded-xl bg-opacity-25 hover:bg-lightDark-200 transition ease-in-out text-white backdrop-blur px-10 py-3">Download CV</a>
             </div>
           </div>
         </div>

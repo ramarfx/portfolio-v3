@@ -1,5 +1,3 @@
-import SVG from "./Svg";
-
 const Card = ({ title, children }) => {
   return (
     <div className="card">

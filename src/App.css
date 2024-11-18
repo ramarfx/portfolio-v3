@@ -15,8 +15,7 @@
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-dark bg-opacity-50 backdrop-blur shadow-inner shadow-lightDark-200;
-  /* box-shadow : inset -1px 0 0 rgba(255, 255, 255, 0.003); */
+  @apply fixed z-[9999] bg-dark/50 backdrop-blur-lg shadow-inner;
 }
 
 .hamburger-line {
@@ -36,16 +35,6 @@
 .line-about {
   @apply w-[30px] lg:w-[40px] h-[2px] mx-6 bg-primary;
 }
-
-/* .mask {
-  -webkit-mask-image: url(img/brush.png);
-  mask-image: url(img/brush.png);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  @apply bg-primary max-w-[400px] lg:scale-125;
-} */
 
 .card {
   @apply flex flex-col justify-center items-center px-5 py-5 bg-lightDark-100 rounded-xl bg-opacity-25 hover:bg-lightDark-200 transition ease-in-out backdrop-blur;
