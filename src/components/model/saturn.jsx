@@ -33,6 +33,8 @@ export function SaturnModel({ isHover, setIsHover }, ...props) {
             window.innerWidth < 768 ? setIsMobile(true) : setIsMobile(false)
         }
 
+        handleResize()
+
         window.addEventListener('resize', handleResize)
 
         return () => {
