@@ -1,6 +1,7 @@
 import Typed from "typed.js";
-import profile from "/profil.png";
-import { useEffect, useRef } from "react";
+import { Suspense, useEffect, useRef } from "react";
+import Saturn from "../components/Saturn";
+import Loader from "../components/ui/loader";
 const Home = () => {
   const typedRef = useRef();
   useEffect(() => {
@@ -37,12 +38,12 @@ const Home = () => {
           </div>
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:right-0">
-              <img
-                src={profile}
-                className="mx-auto h-auto w-[350px] max-w-full lg:scale-110"
-                alt="ramadina almuzthazam image"
-              />
-              <span className="absolute -bottom-24 left-1/2 -z-10 -translate-x-1/2 md:scale-125 lg:-bottom-20 lg:scale-150">
+
+              <Suspense fallback={<Loader />}>
+                <Saturn />
+              </Suspense>
+
+              <span className="absolute -bottom-24 left-1/2 -z-10 -translate-x-1/2 md:scale-125 lg:-bottom-20 lg:scale-150" draggable="false">
                 <img src="/profile-blob.svg" alt="" />
               </span>
             </div>

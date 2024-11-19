@@ -19,9 +19,9 @@ export const Navbar = () => {
   };
   return (
     <>
-      <header className="absolute left-0 top-0 z-50 flex w-full items-center bg-transparent">
+      <header className="absolute left-0 top-0 z-40 flex w-full items-center bg-transparent">
         <div className="container">
-          <div className="relative flex items-center justify-between">
+          <div className="relative z-50 flex items-center justify-between">
             <div className="px-4">
               <a
                 href="#home"
