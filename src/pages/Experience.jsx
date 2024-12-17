@@ -56,8 +56,8 @@ const Experience = () => {
                   </div>
                 )
               })
-              : competitions.map((competition) => (
-                <div className="wrap right lomba show" key={competition.id}>
+              : competitions.toReversed().map((competition, index) => (
+                <div className="wrap right lomba show" key={index}>
                   <div className="content">
                     <h2 className="text-primary">{competition.year}</h2>
                     <p className="text-lg">{competition.description}</p>
