@@ -10,6 +10,7 @@ import Project from "./pages/Project";
 import Footer from "./pages/Footer";
 import "./components/particle.js";
 import { ParticleAnimation } from "./components/particle.js";
+import Contact from "./pages/Contact.jsx";
 
 export default function App() {
   const canvasRef = useRef();
@@ -41,6 +42,7 @@ export default function App() {
       <Skills />
       <Experience />
       <Project />
+      <Contact/>
       <Footer />
     </div>
   );

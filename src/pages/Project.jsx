@@ -22,7 +22,7 @@ const Project = () => {
             </p>
           </div>
 
-          <div className="grid w-full grid-cols-1 justify-center gap-5 px-8 md:grid-cols-3">
+          <div className="grid w-full grid-cols-1 justify-center gap-5 px-8 sm:grid-cols-2 md:grid-cols-3">
             {projects.slice(0, visibleProjects).map((project) => (
               <ProjectCard key={project.title} title={project.title} preview={project.preview} source={project.sourceCode} description={project.description}>
                 <ProjectCard.Image image={project.image} />

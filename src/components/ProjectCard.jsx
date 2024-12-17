@@ -1,7 +1,7 @@
 const ProjectCard = ({ title, source, preview, children, description }) => {
   return (
     <div className="project-card">
-      <div className="w-full h-full">{children}</div>
+      <div className="w-full h-full bg-lightDark-100  bg-opacity-25  transition ease-in-out backdrop-blur">{children}</div>
       <div className="project-card-description h-full flex flex-col justify-between">
         <div>
           <h2 className="">{title}</h2>
